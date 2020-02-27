@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.1.1),
-    on Thu Feb 20 15:27:00 2020
+    on Wed Feb 26 21:16:29 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -99,7 +99,7 @@ image = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=0.0)
-rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.0, pos=[0.0, -0.4], low=0, high=9, labels=[''], scale='')
+rating = visual.RatingScale(win=win, name='rating', marker='triangle', size=1.0, pos=[0.0, -0.4], choices=['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'], tickHeight=-1)
 text_2 = visual.TextStim(win=win, name='text_2',
     text='0: Airplane,    1: Automobile\n2: Bird,        3: Cat\n4: Deer,        5: Dog\n6: Frog,        7: Horse\n8: Ship,        9: Truck',
     font='Arial',
