@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.1.1),
-    on Wed Feb 26 21:16:29 2020
+    on Fri Feb 28 15:04:33 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -113,7 +113,7 @@ globalClock = core.Clock()  # to track the time since experiment started
 routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine 
 
 # set up handler to look after randomisation of conditions etc
-blocks = data.TrialHandler(nReps=2, method='random', 
+blocks = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('chooseBlock.csv'),
     seed=None, name='blocks')
@@ -259,7 +259,7 @@ for thisBlock in blocks:
                 image.setAutoDraw(True)
             if image.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > image.tStartRefresh + 0.3-frameTolerance:
+                if tThisFlipGlobal > image.tStartRefresh + 0.1-frameTolerance:
                     # keep track of stop time/frame for later
                     image.tStop = t  # not accounting for scr refresh
                     image.frameNStop = frameN  # exact frame index
@@ -328,7 +328,7 @@ for thisBlock in blocks:
         
     # completed 1 repeats of 'trials'
     
-# completed 2 repeats of 'blocks'
+# completed 1 repeats of 'blocks'
 
 
 # Flip one final time so any remaining win.callOnFlip() 
